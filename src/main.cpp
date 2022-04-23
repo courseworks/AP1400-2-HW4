@@ -1,6 +1,7 @@
 #include <iostream>
 #include <gtest/gtest.h>
-
+#include "unique_ptr.h"
+#include "shared_ptr.h"
 
 int main(int argc, char **argv)
 {
