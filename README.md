@@ -17,7 +17,7 @@ Define a template class named `UniquePtr` and add the following functions to the
 This class should use a member variable called `T* _p` (T is a template argument) to store a given pointer.
 
 - **Constructor**
-Implement a constructor for your class so the bellow code would work. Your constructor should be able to store the given dynamic pointer properly inside the class using `_p` variable.
+Implement a constructor for your class so the below code would work. Your constructor should be able to store the given dynamic pointer properly inside the class using `_p` variable.
 
 	```cpp
 	UniquePtr<int> ptr{new int{10}};
@@ -31,7 +31,7 @@ The prefered way to construct a  std::unique_ptr is to use a function called `st
 	```
 
 - **Default Constructor**
-Implement a default constructor for your class so the bellow code works and assign `nullptr` to `_p`.
+Implement a default constructor for your class so the below code works and assign `nullptr` to `_p`.
 
 	```cpp
 	UniquePtr<int> ptr;
@@ -115,21 +115,21 @@ This class should use a member variable called `T* _p` (T is a template argument
 
 
 - **Constructor**
-Implement a constructor for your class so the bellow code would work. Your constructor should be able to store the given dynamic pointer properly inside the class using `_p` variable.
+Implement a constructor for your class so the below code would work. Your constructor should be able to store the given dynamic pointer properly inside the class using `_p` variable.
 
 	```cpp
 	UniquePtr<int> ptr{new int{10}};
 	```
 
 - **make_shared** (outside the class)
-The prefered way to construct a  std::shared_ptr is to use a function called `std::make_shared`. implement a similar function and make the code bellow work.
+The prefered way to construct a  std::shared_ptr is to use a function called `std::make_shared`. implement a similar function and make the code below work.
 
 	```cpp
 	SharedPtr<int> ptr{make_shared<int>(10)};
 	```
 
 - **Default Constructor**
-Implement a default constructor for your class so the bellow code works and assign nullptr to `_p`.
+Implement a default constructor for your class so the below code works and assign nullptr to `_p`.
 
 	```cpp
 	SharedPtr<int> ptr;
@@ -142,7 +142,7 @@ As you know when dealing with dynamic pointers inside a class implementing destr
 	```
 
 - **Copy Constructor**
-As you already know A key difference between `SharedPtr` and `UniquePtr` classes is that we can use copy constrctor and make a copy of `SharedPtr`s. so the code bellow should run smoothly.
+As you already know A key difference between `SharedPtr` and `UniquePtr` classes is that we can use copy constrctor and make a copy of `SharedPtr`s. so the code below should run smoothly.
 
 	```cpp
 	SharedPtr<int> ptr1{new int{10}};
@@ -150,7 +150,7 @@ As you already know A key difference between `SharedPtr` and `UniquePtr` classes
 	```
 
 - **Operator=**
-Exactly like the previous section we can have operator= for `SharedPtr`s. again the code bellow should run without any errors.
+Exactly like the previous section we can have operator= for `SharedPtr`s. again the code below should run without any errors.
 
 	```cpp
 	SharedPtr<int> ptr1{new int{10}};
